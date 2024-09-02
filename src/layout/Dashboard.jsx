@@ -13,7 +13,7 @@ const Dashboard =() => {
   const autenticado=localStorage.getItem('token')
   return (
 
-    <div className="flex h-screen bg-blue-400">
+    <div className="flex h-screen bg-blue-400 overflow-hidden">
       {/* Sidebar */}
       <div className="w-1/5 bg-blue-900 text-white flex flex-col items-center">
         <div className="my-8">
