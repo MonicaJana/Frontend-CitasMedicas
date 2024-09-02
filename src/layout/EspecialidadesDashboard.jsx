@@ -10,7 +10,7 @@ const EspecialidadesDashboard=()=> {
     const autenticado=localStorage.getItem('token')
 
   return (
-    <div className="flex flex-col md:flex-row h-screen bg-blue-400 overflow-hidden">
+    <div className="flex flex-col md:flex-row h-screen bg-blue-400 ">
   {/* Sidebar */}
   <div className="w-full md:w-1/5 bg-blue-900 text-white flex flex-col items-center">
     <div className="my-8">
