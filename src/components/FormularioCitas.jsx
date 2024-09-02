@@ -2,7 +2,6 @@ import { useEffect, useState } from "react"
 import axios from 'axios'
 import Mensaje from "./Alerts/Mensaje"
 import { useNavigate } from "react-router-dom"
-import { listarEspecialidades } from "../../../Backend/EF_GestionMedicaMyS/src/controllers/especialidad_controller"
 
 export const FormularioCitas = ({cita}) => {
 
