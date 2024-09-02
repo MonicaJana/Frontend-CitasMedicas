@@ -1,6 +1,6 @@
 import React from 'react'
 import TablaEspecialidades from '../components/TablaEspecialidades'
-import { listarEspecialidades } from '../../../Backend/EF_GestionMedicaMyS/src/controllers/especialidad_controller'
+
 
 const ListarEspecialidades = () => {
     return (

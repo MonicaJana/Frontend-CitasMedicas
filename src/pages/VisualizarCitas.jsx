@@ -2,30 +2,16 @@ import { useParams } from 'react-router-dom';
 import { useContext, useEffect, useState } from 'react';
 import axios from 'axios';
 import Mensaje from '../components/Alerts/Mensaje';
-//import ModalTratamiento from '../componets/Modals/ModalTratamiento';
-//import TratamientosContext from '../context/TratamientoProvider';
-//import TablaTratamientos from '../componets/TablaTratamientos';
-import AuthContext from '../context/AuthProvider';
 
 
 const VisualizarCitas = () => {
-   // const { auth } = useContext(AuthContext)
-    //const {modal,mensaje,handleModal,tratamientos,setTratamientos} = useContext(TratamientosContext)
+
     const [mensaje, setMensaje] = useState({})
     //PASO 1
     const {id} = useParams()
     const [cita, setCita] = useState({})
     const [paciente, setPaciente] = useState({});
     const [especialidad, setEspecialidad] = useState({});
-
-
-
-    const formatearFecha = (fecha) => {
-        const nuevaFecha = new Date(fecha)
-			nuevaFecha.setMinutes(nuevaFecha.getMinutes() + nuevaFecha.getTimezoneOffset())
-        return new Intl.DateTimeFormat('es-EC',{dateStyle:'long'}).format(nuevaFecha)
-    }
-
 
     //PASO 2
     useEffect(() => {

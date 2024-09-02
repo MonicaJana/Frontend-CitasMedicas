@@ -35,8 +35,6 @@ export const  Login = () => {
       // Validación de la contraseña
       if (!form.password) {
         newErrors.password = 'La clave es obligatoria';
-      } else if (form.password.length < 8) {
-        newErrors.password = 'La clave debe tener al menos 8 caracteres';
       }
   
       return newErrors;

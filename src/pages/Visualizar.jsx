@@ -2,15 +2,11 @@ import { useParams } from 'react-router-dom';
 import { useContext, useEffect, useState } from 'react';
 import axios from 'axios';
 import Mensaje from '../components/Alerts/Mensaje';
-//import ModalTratamiento from '../componets/Modals/ModalTratamiento';
-//import TratamientosContext from '../context/TratamientoProvider';
-//import TablaTratamientos from '../componets/TablaTratamientos';
-import AuthContext from '../context/AuthProvider';
+
 
 
 const Visualizar = () => {
-   // const { auth } = useContext(AuthContext)
-    //const {modal,mensaje,handleModal,tratamientos,setTratamientos} = useContext(TratamientosContext)
+
     const [mensaje, setMensaje] = useState({})
     //PASO 1
     const {id} = useParams()
@@ -108,8 +104,6 @@ const Visualizar = () => {
                                 </div>
                             </div>
                             <hr className='my-4' />
-                            {Object.keys(mensaje).length>0 && <Mensaje tipo={mensaje.tipo}>{mensaje.respuesta}</Mensaje>}
-                            <p className='mb-8'>Este submódulo te permite visualizar las citas del paciente</p>
                             </>
                         )
                         :
