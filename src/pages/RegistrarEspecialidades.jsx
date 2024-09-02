@@ -1,6 +1,6 @@
 import React from 'react'
 import { FormularioEspecialidades } from '../components/FormularioEspecialidades'
-
+//Registrar
 const RegistrarEspecialidades = () => {
     return (
         <div>
