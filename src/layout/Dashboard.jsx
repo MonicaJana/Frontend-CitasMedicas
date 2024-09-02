@@ -8,11 +8,11 @@ import AuthContext from '../context/AuthProvider'
 
 
 const Dashboard =() => {
-  const location = useLocation()
+
   const {auth}=useContext(AuthContext)
   const autenticado=localStorage.getItem('token')
   return (
-
+  <>
     <div className="flex flex-col md:flex-row h-screen bg-blue-400">
   {/* Sidebar */}
   <div className="w-full md:w-1/5 bg-blue-900 text-white flex flex-col items-center p-4 md:p-8">
@@ -23,7 +23,7 @@ const Dashboard =() => {
     <div className="mb-4 md:mb-8 flex flex-col items-center">
       <img src={LogoPrincipal} alt="Logo" className="w-24 h-24" />
       <h2 className="text-center text-sm md:text-lg">BIENVENIDO - {auth?.nombre}</h2>
-      <hr className="border-white w-1 mt-2" />
+      <hr className="border-white w-full mt-2" />
     </div>
   </div>
 
@@ -32,7 +32,7 @@ const Dashboard =() => {
     <div className="flex justify-end bg-blue-900 p-4 md:p-8">
       <div className="flex items-center">
         <span className="text-white mr-4 text-sm md:text-base">BIENVENIDO - {auth?.nombre}</span>
-        <Link to='/' className="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700" onClick={() => { localStorage.removeItem('token') }}>Salir</Link>
+        <Link to='/' className="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700" onClick={() => { localStorage.removeItem('token', '_id') }}>Salir</Link>
       </div>
     </div>
 
@@ -64,7 +64,7 @@ const Dashboard =() => {
     </div>
   </div>
 </div>
-
+</>
   );
 }
 

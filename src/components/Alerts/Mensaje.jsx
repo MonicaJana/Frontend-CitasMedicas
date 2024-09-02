@@ -1,3 +1,4 @@
+
 const Mensaje = ({ children, tipo }) => {
     return (
         <div className={`p-6 border-l-4 ${tipo ? 'border-green-500' : 'border-red-500'} rounded-r-xl 

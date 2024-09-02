@@ -139,7 +139,7 @@ export const FormularioCitas = ({cita}) => {
                 id='codigo'
                 type='text'
                 className='border-2 w-full p-1 mt-1 placeholder-gray-400 rounded-md mb-3'
-                placeholder='codigo de la cita'
+                placeholder='código de la cita'
                 name='codigo'
                 value={form.codigo}
                 onChange={handleChange}
@@ -155,7 +155,7 @@ export const FormularioCitas = ({cita}) => {
                 id='descripcion'
                 type='text-area'
                 className='border-2 w-full p-1 mt-1 placeholder-gray-400 rounded-md mb-3'
-                placeholder='descripcion de la cita'
+                placeholder='descripción de la cita'
                 name='descripcion'
                 value={form.descripcion}
                 onChange={handleChange}

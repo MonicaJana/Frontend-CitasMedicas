@@ -10,7 +10,7 @@ const ActualizarCitas = () => {
 
     const [cita, setCita] = useState({})
 
-    const [mensaje, setMensaje] = useState({})
+    const [mensaje] = useState({})
     
     useEffect(() => {
       const consultarCita = async () => { 

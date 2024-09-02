@@ -64,7 +64,7 @@ export const Formulario = ({paciente}) => {
                 }, 3000);
             } catch (error) {
                     console.log(error);
-                    setMensaje({respuesta:error.response.data.msg,tipo:false})
+                    setMensaje({respuesta:error.response.data?.errors[0].msg,tipo:false})
             }
         }
     }
@@ -77,6 +77,7 @@ export const Formulario = ({paciente}) => {
         <form onSubmit={handleSubmit}>
     {Object.keys(mensaje).length > 0 && (
         <Mensaje tipo={mensaje.tipo}>{mensaje.respuesta}</Mensaje>
+        
     )}
     <div className="flex flex-wrap -mx-2">
         <div className="w-1/2 px-2">

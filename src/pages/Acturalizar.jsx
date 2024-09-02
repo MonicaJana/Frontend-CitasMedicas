@@ -10,7 +10,7 @@ const Actualizar = () => {
 
     const [paciente, setPaciente] = useState({})
 
-    const [mensaje, setMensaje] = useState({})
+    const [mensaje] = useState({})
     
     useEffect(() => {
       const consultarPaciente = async () => { 

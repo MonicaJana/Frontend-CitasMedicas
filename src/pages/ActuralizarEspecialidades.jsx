@@ -10,7 +10,7 @@ const ActualizarEspecialidades = () => {
 
     const [especialidad, setEspecialidad] = useState({})
 
-    const [mensaje, setMensaje] = useState({})
+    const [mensaje] = useState({})
     
     useEffect(() => {
       const consultarEspecialidad = async () => { 

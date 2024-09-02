@@ -3,11 +3,9 @@ import { useContext,useEffect, useState } from "react";
 import { MdDeleteForever,MdNoteAdd,MdInfo } from "react-icons/md";
 import Mensaje from "./Alerts/Mensaje"
 import {useNavigate} from 'react-router-dom'
-import AuthContext from "../context/AuthProvider"
 
 const TablaCitas = () => {
 
-    const { auth } = useContext(AuthContext)
     const navigate =useNavigate()
 
     const [citas,setCitas]= useState([])
